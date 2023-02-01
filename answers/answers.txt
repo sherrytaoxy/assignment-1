@@ -1,0 +1,58 @@
+1. 
+$ mkdir answers
+$ cd answers
+
+2. 
+$ touch answers.txt
+
+3.
+see above
+
+4. 
+~/github/assignment-1/answers
+
+5.
+$ ls -al
+
+6.
+How can you use ls to list files outside of your current directory? (1 pt)
+
+7.
+Remove can't be reversed, so if I accidentally run it, I will lose things I don't want to lose. For example, if I rm answers.txt, I would probably have to restart from the beginning, which is not great. 
+
+8.
+$ mkdir results
+
+9.
+$ nano my_script.sh
+
+10.
+$ chmod 775 my_script.sh
+
+11.
+$ cd ~/GitHub/assignment-1/data
+
+12.
+$ wc -w * | sort -nr | head -3 | tail -1
+
+13.
+$ cd data
+$ for file in data
+>do
+>for filename in *.csv
+>do
+>~/GitHub/assignment-1/answers/my_script.sh $filename
+>done
+>done
+(I have to change my_script.sh a little bit, because in your description, you asked for the second column of each tsv, but the code can only give me the first column, so I changed the 1 in the last row to 2, I think that is how I got the right results.)
+
+14.
+$ cd data        (I think I am in here already from the last question, but just to show where I'm at)
+$ unzip '*.zip'
+$ mv annual_aqi_by_county*.csv unzipped-files
+
+15.
+$ rm (-i) *.zip
+
+16.
+$ mv annual_aqi_by_county_200?.csv ~/GitHub/assignment-1/answers/results
